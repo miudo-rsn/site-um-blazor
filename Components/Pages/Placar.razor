@@ -1,0 +1,36 @@
+@page "/placar"
+@rendermode InteractiveServer
+
+<PageTitle>Placar</PageTitle>
+
+<h1>Placar</h1>
+<h2>Pontos: @pontos</h2>
+
+<button @onclick="Somar">Somar 1 Ponto</button>
+<button @onclick="Subtrair">Subtrair 1 Ponto</button>
+<button @onclick="Zerar">Zerar Placar</button>
+
+@code {
+    private int pontos = 0;
+
+    private void Somar()
+    {
+        pontos++;
+    }
+
+    private void Subtrair()
+    {
+        pontos--;
+
+        // o placar não pode ficar negativo
+        if (pontos < 0)
+        {
+            pontos = 0;
+        }
+    }
+
+    private void Zerar()
+    {
+        pontos = 0;
+    }
+}

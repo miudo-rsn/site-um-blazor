@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: #222;
+}
+
+.menu {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding: 12px 24px;
+    background: #2b2b5e;
+}
+
+.menu .marca {
+    color: #fff;
+    font-weight: bold;
+    margin-right: 16px;
+}
+
+.menu a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.menu a.active,
+.menu a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+main {
+    padding: 24px;
+}
+
+button {
+    padding: 8px 14px;
+    margin-right: 8px;
+    cursor: pointer;
+}

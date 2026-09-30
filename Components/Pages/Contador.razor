@@ -1,0 +1,17 @@
+@page "/contador"
+@rendermode InteractiveServer
+
+<PageTitle>Contador</PageTitle>
+
+<h1>Número de cliques: @quantidade</h1>
+
+<button @onclick="Incrementar">Clique Aqui</button>
+
+@code {
+    private int quantidade = 0;
+
+    private void Incrementar()
+    {
+        quantidade++;
+    }
+}
